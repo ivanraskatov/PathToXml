@@ -1,0 +1,10 @@
+D:\HG REPO\PathToXML\PathToXML\PathToXML\bin\Debug\netcoreapp2.2\PathToXML.deps.json
+D:\HG REPO\PathToXML\PathToXML\PathToXML\bin\Debug\netcoreapp2.2\PathToXML.runtimeconfig.json
+D:\HG REPO\PathToXML\PathToXML\PathToXML\bin\Debug\netcoreapp2.2\PathToXML.runtimeconfig.dev.json
+D:\HG REPO\PathToXML\PathToXML\PathToXML\bin\Debug\netcoreapp2.2\PathToXML.dll
+D:\HG REPO\PathToXML\PathToXML\PathToXML\bin\Debug\netcoreapp2.2\PathToXML.pdb
+D:\HG REPO\PathToXML\PathToXML\PathToXML\obj\Debug\netcoreapp2.2\PathToXML.csproj.CoreCompileInputs.cache
+D:\HG REPO\PathToXML\PathToXML\PathToXML\obj\Debug\netcoreapp2.2\PathToXML.AssemblyInfoInputs.cache
+D:\HG REPO\PathToXML\PathToXML\PathToXML\obj\Debug\netcoreapp2.2\PathToXML.AssemblyInfo.cs
+D:\HG REPO\PathToXML\PathToXML\PathToXML\obj\Debug\netcoreapp2.2\PathToXML.dll
+D:\HG REPO\PathToXML\PathToXML\PathToXML\obj\Debug\netcoreapp2.2\PathToXML.pdb
