@@ -15,30 +15,32 @@ namespace PathToXML
     {
         public static void xmlWrite(XmlTextWriter xmlTextWriter, string folderPath, string replacePart)
         {
-            if (Helper.AllDirectorySharpCheck(folderPath))
+            if (Filter.FolderCheck(folderPath))
             {
-                //Корневая папка
-                xmlTextWriter.WriteStartElement("Folder");
-                xmlTextWriter.WriteAttributeString("Path", Helper.XmlPathFormat(folderPath, replacePart));
-                xmlTextWriter.WriteAttributeString("Description", Description.Show(folderPath));
-                xmlTextWriter.WriteEndElement();
-                List<string> fileNamesSortedList = Helper.FindSortSharpFiles(folderPath, replacePart);
-
-                if (Helper.DirectorySharpCheck(folderPath))
+                if (Helper.AllDirectorySharpCheck(folderPath))
                 {
-                    //Файлы в корневой папке
-                    foreach (string fileName in fileNamesSortedList)
-                    {
-                        xmlTextWriter.WriteStartElement("File");
-                        xmlTextWriter.WriteAttributeString("Path", fileName);
-                        xmlTextWriter.WriteAttributeString("Description", " ");
-                        xmlTextWriter.WriteEndElement();
+                    //Корневая папка
+                    xmlTextWriter.WriteStartElement("Folder");
+                    xmlTextWriter.WriteAttributeString("Path", Helper.XmlPathFormat(folderPath, replacePart));
+                    xmlTextWriter.WriteAttributeString("Description", Description.Show(folderPath));
+                    xmlTextWriter.WriteEndElement();
+                    List<string> fileNamesSortedList = Helper.FindSortSharpFiles(folderPath, replacePart);
 
+                    if (Helper.DirectorySharpCheck(folderPath))
+                    {
+                        //Файлы в корневой папке
+                        foreach (string fileName in fileNamesSortedList)
+                        {
+                            xmlTextWriter.WriteStartElement("File");
+                            xmlTextWriter.WriteAttributeString("Path", fileName);
+                            xmlTextWriter.WriteAttributeString("Description", " ");
+                            xmlTextWriter.WriteEndElement();
+
+                        }
                     }
                 }
-                
             }
-            
+
             foreach (string folderName in Directory.GetDirectories(folderPath))
             {
                 xmlWrite(xmlTextWriter, folderName, replacePart);
