@@ -14,7 +14,7 @@ namespace PathToXML
     {
         public static string Show(string folderPath)
         {
-            
+
             string description = "Прочее";
             string folderName = new DirectoryInfo(folderPath).Name;
 
@@ -24,7 +24,7 @@ namespace PathToXML
             }
             if (folderName.Contains("LibTiff"))
             {
-                description = "Библиотеки TIff";
+                description = "Общие классы, используемые в библиотеке";
             }
             if (folderName.Contains("zLib"))
             {
@@ -44,7 +44,7 @@ namespace PathToXML
             }
             if (folderName.Contains("Internal"))
             {
-                description = "Классы внутренние";
+                description = "Классы для внутреннего использования";
             }
             if (folderName.Contains("Tiff2Pdf"))
             {
@@ -228,15 +228,15 @@ namespace PathToXML
             }
             if (folderName.Contains("netcoreapp2.0"))
             {
-                description = "версия .Net 2.0";
+                description = "Версия .Net 2.0";
             }
-            if (folderName.Contains("ddddd"))
+            if (folderName.Contains("netstandard1.3"))
             {
-                description = "Классы описывающие ddddd";
+                description = "Версия .NET 1.3";
             }
-            if (folderName.Contains("ddddd"))
+            if (folderName.Contains("Enums"))
             {
-                description = "Классы описывающие ddddd";
+                description = "Объекты-перечисления, используемые в библиотеке";
             }
             if (folderName.Contains("ddddd"))
             {

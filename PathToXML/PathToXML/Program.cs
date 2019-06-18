@@ -31,7 +31,7 @@ namespace PathToXML
                     {
                         xmlTextWriter.WriteStartElement("File");
                         xmlTextWriter.WriteAttributeString("Path", fileName);
-                        xmlTextWriter.WriteAttributeString("Description", Description.Show(folderPath));
+                        xmlTextWriter.WriteAttributeString("Description", " ");
                         xmlTextWriter.WriteEndElement();
 
                     }
@@ -48,7 +48,7 @@ namespace PathToXML
         {
             // указать новый путь исходников библиотеки
             string folderPath = @"D:\test";
-            string folderPath2 = @"E:\BACKUP_FILES\БИБЛИОТЕКИ для ФСТЭК\BIT MIRACLE\libtiff.net-master";
+            string folderPath2 = @"D:\GIT REPO\LibTiff.NET";
             string folderPath3 = @"D:\GIT REPO\hardcodetWpfnotifyicon1.0.5\Hardcodet.NotifyIcon.Wpf\Source";
             string folderPathEmpty = @"D:\test2";
             string folderPathDirectories = @"D:\test3";
