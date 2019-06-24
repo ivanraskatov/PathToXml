@@ -18,38 +18,38 @@ namespace PathToXML
         {
             // указать новый путь исходников библиотеки
             String[] folderPaths = new string[17];
-            folderPaths[1] = @"D:\GIT REPO\LibTiff.NET";
-            folderPaths[2] = @"D:\GIT REPO\hardcodetWpfnotifyicon1.0.5\Hardcodet.NotifyIcon.Wpf\Source";
-            string folderPath3 = @"D:\GIT REPO\NetOffice 1.7.3\Source";
-            string folderPathEmpty = @"D:\test2";
-            string folderPathDirectories = @"D:\test3";
-            
-            String xmlFilesPath = @"D:\xmlFiles";
+            folderPaths[1] = @"D:\GIT REPO\CsvHelper 7.0";
+            folderPaths[2] = @"D:\GIT REPO\LibTiff.NET";
+            folderPaths[3] = @"D:\GIT REPO\hardcodetWpfnotifyicon1.0.5\Hardcodet.NotifyIcon.Wpf\Source";
+            folderPaths[4] = @"D:\GIT REPO\ICSharpCodeAvalonEdit-5.0.3\ICSharpCode.AvalonEdit";
+            folderPaths[5] = @"D:\GIT REPO\ITfoxtecSAML-2.0";
+            folderPaths[6] = @"D:\GIT REPO\MSExchangeWebServicesNETStandard-1.1.3";
+            folderPaths[7] = @"D:\GIT REPO\MimeTypeMap-2.3.2";
+            folderPaths[8] = @"D:\GIT REPO\NetOffice 1.7.3";
+            folderPaths[9] = @"D:\GIT REPO\npgsql-4.0.2";
+           
 
             // Создать новый файл  xml
 
-            #region FolderNames
-            //string directoryName = new DirectoryInfo(folderPath).Name;
-            //string directoryName2 = new DirectoryInfo(folderPath2).Name;
-
-
-            #endregion
             #region XmlFilePaths
             String[] xmlPaths = new string[17];
-            xmlPaths[1] = @"D:\GIT REPO\XmlFiles\LibTiff.NET.xml";
-            xmlPaths[2] = @"D:\GIT REPO\XmlFiles\hardcodetWpfnotifyicon1.0.5.xml";
-            //xmlPaths[8] = @"D:\GIT REPO\XmlFiles\NetOffice 1.7.3.xml";
-
-            String xmlPath = @"D:\GIT REPO\XmlFiles\LibTiff.NET.xml";
-            String xmlPath2 = @"D:\GIT REPO\XmlFiles\hardcodetWpfnotifyicon1.0.5.xml";
-            String xmlPath3 = @"D:\GIT REPO\XmlFiles\NetOffice 1.7.3.xml";
+            xmlPaths[1] = @"D:\GIT REPO\XmlFiles\CsvHelper 7.0.xml";
+            xmlPaths[2] = @"D:\GIT REPO\XmlFiles\LibTiff.NET.xml";
+            xmlPaths[3] = @"D:\GIT REPO\XmlFiles\hardcodetWpfnotifyicon1.0.5.xml";
+            xmlPaths[4] = @"D:\GIT REPO\XmlFiles\ICSharpCodeAvalonEdit-5.0.3.xml";
+            xmlPaths[5] = @"D:\GIT REPO\XmlFiles\ITfoxtecSAML-2.0.xml";
+            xmlPaths[6] = @"D:\GIT REPO\XmlFiles\MSExchangeWebServicesNETStandard-1.1.3.xml";
+            xmlPaths[7] = @"D:\GIT REPO\XmlFiles\MimeTypeMap-2.3.2.xml";
+            xmlPaths[8] = @"D:\GIT REPO\XmlFiles\NetOffice 1.7.3.xml";
+            xmlPaths[9] = @"D:\GIT REPO\XmlFiles\npgsql-4.0.2.xml";
+            
 
             #endregion
 
             #region Write Files
 
 
-            for (int i = 1; i <= 2; i++)
+            for (int i = 1; i <= 9; i++)
             {
                 XmlTextWriter xmlTextWriter = XmlWriter.Show(xmlPaths[i]);
                 xmlTextWriter.Formatting = Formatting.Indented;
