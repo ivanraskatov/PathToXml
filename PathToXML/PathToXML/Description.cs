@@ -257,114 +257,47 @@ namespace PathToXML
             {
                 description = "Классы описывающие работу с документами";
             }
-            if (folderName.Contains("ddddd"))
+            if (folderName.Contains("Highlighting"))
             {
-                description = "Классы описывающие ddddd";
+                description = "Объекты, отвечающие за выделение";
             }
-            if (folderName.Contains("ddddd"))
+            if (folderName.Contains("Folding"))
             {
-                description = "Классы описывающие ddddd";
+                description = "Объекты, отвечающие за группировку кода";
             }
-            if (folderName.Contains("ddddd"))
+            if (folderName.Contains("Editing"))
             {
-                description = "Классы описывающие ddddd";
+                description = "Объекты, отвечающие за редактирование";
             }
-            if (folderName.Contains("ddddd"))
+            if (folderName.Contains("Resources"))
             {
-                description = "Классы описывающие ddddd";
+                description = "Объекты ресурсов";
             }
-            if (folderName.Contains("ddddd"))
+            if (folderName.Contains("Xshd"))
             {
-                description = "Классы описывающие ddddd";
+                description = "Объекты, отвечающие за работу с .Xshd файлами";
             }
-            if (folderName.Contains("ddddd"))
+            if (folderName.Contains("Indentation"))
             {
-                description = "Классы описывающие ddddd";
+                description = "Объекты, отвечающие за табуляцию";
             }
-            if (folderName.Contains("ddddd"))
+            if (folderName.Contains("Rendering"))
             {
-                description = "Классы описывающие ddddd";
+                description = "Объекты, отвечающие за рендеринг";
             }
-            if (folderName.Contains("ddddd"))
+            if (folderName.Contains("Search"))
             {
-                description = "Классы описывающие ddddd";
+                description = "Объекты, отвечающие за поиск";
             }
-            if (folderName.Contains("ddddd"))
+            if (folderName.Contains("Snippets"))
             {
-                description = "Классы описывающие ddddd";
+                description = "Объекты - сниппеты";
             }
-            if (folderName.Contains("ddddd"))
+            if (folderName.Contains("Utils"))
             {
-                description = "Классы описывающие ddddd";
+                description = "Утилиты";
             }
-            if (folderName.Contains("ddddd"))
-            {
-                description = "Классы описывающие ddddd";
-            }
-            if (folderName.Contains("ddddd"))
-            {
-                description = "Классы описывающие ddddd";
-            }
-            if (folderName.Contains("ddddd"))
-            {
-                description = "Классы описывающие ddddd";
-            }
-            if (folderName.Contains("ddddd"))
-            {
-                description = "Классы описывающие ddddd";
-            }
-            if (folderName.Contains("ddddd"))
-            {
-                description = "Классы описывающие ddddd";
-            }
-            if (folderName.Contains("ddddd"))
-            {
-                description = "Классы описывающие ddddd";
-            }
-            if (folderName.Contains("ddddd"))
-            {
-                description = "Классы описывающие ddddd";
-            }
-            if (folderName.Contains("ddddd"))
-            {
-                description = "Классы описывающие ddddd";
-            }
-            if (folderName.Contains("ddddd"))
-            {
-                description = "Классы описывающие ddddd";
-            }
-            if (folderName.Contains("ddddd"))
-            {
-                description = "Классы описывающие ddddd";
-            }
-            if (folderName.Contains("ddddd"))
-            {
-                description = "Классы описывающие ddddd";
-            }
-            if (folderName.Contains("ddddd"))
-            {
-                description = "Классы описывающие ddddd";
-            }
-            if (folderName.Contains("ddddd"))
-            {
-                description = "Классы описывающие ddddd";
-            }
-            if (folderName.Contains("ddddd"))
-            {
-                description = "Классы описывающие ddddd";
-            }
-            if (folderName.Contains("ddddd"))
-            {
-                description = "Классы описывающие ddddd";
-            }
-            if (folderName.Contains("ddddd"))
-            {
-                description = "Классы описывающие ddddd";
-            }
-            if (folderName.Contains("ddddd"))
-            {
-                description = "Классы описывающие ddddd";
-            }
+            
             return description;
         }
     }

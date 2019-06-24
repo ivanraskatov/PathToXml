@@ -32,7 +32,7 @@ namespace PathToXML
                         Console.WriteLine("Folder  " + path);
                         xmlTextWriter.WriteStartElement("Folder");
                         xmlTextWriter.WriteAttributeString("Path", path);
-                        xmlTextWriter.WriteAttributeString("Description", Description.Show(path)+".");
+                        xmlTextWriter.WriteAttributeString("Description", Description.Show(item.FullName) +".");
                         xmlTextWriter.WriteEndElement();
 
 
