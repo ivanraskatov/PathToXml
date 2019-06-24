@@ -12,6 +12,11 @@ namespace PathToXML
 {
     class Folder
     {
+        /// <summary>
+        /// Проверяет наличие .cs файлов папке и в подпапках и возвращает True, если нашел.
+        /// </summary>
+        /// <param name="folderPath"></param>
+        /// <returns></returns>
         public static Boolean CheckFolder(string folderPath)
         {
 
@@ -34,5 +39,6 @@ namespace PathToXML
             }
             
         }
+        
     }
 }

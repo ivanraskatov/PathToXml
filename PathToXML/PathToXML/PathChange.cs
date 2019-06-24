@@ -7,7 +7,12 @@ namespace PathToXML
 {
     class PathChange
     {
-
+        /// <summary>
+        /// Выполняет замену пути исходного для указанного пути на новый фиктивный путь, для красоты.
+        /// </summary>
+        /// <param name="folderpath"></param>
+        /// <param name="replacePart"></param>
+        /// <returns></returns>
         public static string ReplaceName(string folderpath, string replacePart)
         {
             string newPath;

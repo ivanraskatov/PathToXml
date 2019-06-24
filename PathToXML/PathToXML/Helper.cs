@@ -1,12 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data.SqlTypes;
 using System.IO;
-using System.Security.Cryptography.X509Certificates;
 using System.Text;
-using System.Threading;
 using System.Xml;
-using System.Xml.Linq;
 
 namespace PathToXML
 {
@@ -22,12 +18,16 @@ namespace PathToXML
         public static List<string> PrepareSharpFiles(List<string> filePathsList)
         {
             List<string> fileNamesSortedList = new List<String>();  // создаем лист пустой, потом его наполним и выведем. 
-            filePathsList.Sort();                                   // сортировка получаемого листа адресов по алфавиту
+                                                                    // сортировка получаемого листа адресов по алфавиту
             foreach (string fileName in filePathsList)             // цикл наполненния пустого листа адресами из отсортированного
             {
-                fileNamesSortedList.Add(fileName);                  // добавляем элементы в пустой лист наполняя каждый значением из отсортированного
+                if(Filter.FolderCheck(fileName))
+                {
+                    fileNamesSortedList.Add(fileName);
+                }
+                                  
             }
-            
+            filePathsList.Sort();
             return fileNamesSortedList;                             // возвращаем лист сортированных адресов
         }
 
@@ -41,19 +41,27 @@ namespace PathToXML
             
             List<string> filePathsList = new List<String>();   // Создаем пустой лист
             string fileMask = @"*.cs";                         // Объявляем переменную с форматом маски для поиска
-            
+
             foreach (string fileName in Directory.GetFiles(folderPath, fileMask, SearchOption.TopDirectoryOnly))
             {
-                filePathsList.Add(fileName);                   // Наполняем лист адресами найденных C# файлов              
+                if (Filter.FolderCheck(fileName))
+                {
+                    filePathsList.Add(fileName);                   // Наполняем лист адресами найденных C# файлов              
+                    Console.WriteLine(fileName);
+                }
             }
-
+            Console.WriteLine("================================================================================");
             filePathsList.Sort();
+            foreach (string fileName in filePathsList)
+            {
+               Console.WriteLine(fileName);
+            }
             // Ниже вызываем метод, который заменяет часть адреса на фиктивный для красоты
             List<string> newFormatList = new List<string>();
             foreach (string newPath in Helper.XmlPathFormat(filePathsList, folderPath, replacePart))
             {
                 newFormatList.Add(newPath);
-                //Console.WriteLine(newPath);
+
             }
             return newFormatList;                              // Возвращаем полученный лист адресов 
         }
@@ -104,21 +112,16 @@ namespace PathToXML
 
         public static string XmlPathFormat(string basePath, string replacePart)
         {
-            string fakePath = "Repository";
+            string fakePath = @"C:\Repositories";
             string directoryName = new DirectoryInfo(basePath).Name;
             string newPath;
-            int countBasePath = basePath.Length;
-            int countFolder = directoryName.Length;
-            int rightEdge = countBasePath - countFolder - 3;
-            //newPath = basePath.Remove(2, rightEdge);
-            //newPath = newPath.Insert(2, fakePath);
             newPath = basePath.Replace(replacePart, fakePath);
             return newPath;
         }
 
         public static string GetPathReplacePart(string basePath)
         {
-            string replacePart = Path.GetDirectoryName(basePath).Remove(0, 3);
+            string replacePart = Path.GetDirectoryName(basePath);
 
             return replacePart;
         }
@@ -126,7 +129,7 @@ namespace PathToXML
         public static List<string> XmlPathFormat(List<string> filePathsList, string basePath, string replacePart)
         {
             List<string> formattedPathList = new List<string>();
-            string fakePath = "Repository";
+            string fakePath = @"C:\Repositories";
             string directoryName = basePath.Remove(0, Path.GetDirectoryName(basePath).Length);
             //string replacePart = Path.GetDirectoryName(basePath).Remove(0,3);
 
@@ -139,13 +142,7 @@ namespace PathToXML
             {
                 newPath = path;
                 newPath = newPath.Replace(replacePart, fakePath);
-                
-                //newPath = path.Remove(3, removeAmount);
-                Console.WriteLine(newPath);
-                //newPath = newPath.Insert(3, fakePath);
-                //Console.WriteLine(newPath);
                 formattedPathList.Add(newPath);
-
             }
             return formattedPathList;
         }

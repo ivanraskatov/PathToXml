@@ -10,6 +10,9 @@ using System.Xml.Linq;
 
 namespace PathToXML
 {
+    /// <summary>
+    /// Возвращает строку - описание для xml файла, которое выбирается по ключевым словам в пути к файлу или папке.
+    /// </summary>
     class Description
     {
         public static string Show(string folderPath)

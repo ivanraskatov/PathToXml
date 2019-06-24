@@ -10,29 +10,43 @@ using System.Xml.Linq;
 
 namespace PathToXML
 {
+    /// <summary>
+    /// Выполняет фильтрацию папок/файлов по наличию запрещенных сочетаний в пути к файлу/папке. 
+    /// </summary>
     public class Filter
     {
         public static bool FolderCheck(string folderPath)
         {
             bool folderChecked = true;
             string folderName = new DirectoryInfo(folderPath).Name;
-            if (folderName.Contains("Debug") || folderName.Contains("debug"))
+            if (folderPath.Contains("Debug") || folderPath.Contains("debug"))
             {
                 return false;
             }
-            if (folderName.IndexOf("test", StringComparison.OrdinalIgnoreCase) >= 0)
+            if (folderPath.IndexOf("test", StringComparison.OrdinalIgnoreCase) >= 0)
             {
                 return false;
             }
-            if (folderName.IndexOf("obj", StringComparison.OrdinalIgnoreCase) >= 0)
+            if (folderPath.IndexOf("obj", StringComparison.OrdinalIgnoreCase) >= 0)
             {
                 return false;
             }
-            if (folderName.IndexOf("samples", StringComparison.OrdinalIgnoreCase) >= 0)
+            if (folderPath.IndexOf("samples", StringComparison.OrdinalIgnoreCase) >= 0)
             {
                 return false;
             }
-            Console.WriteLine(folderName + " Все хорошо");
+            if (folderPath.IndexOf("examples", StringComparison.OrdinalIgnoreCase) >= 0)
+            {
+                return false;
+            }
+            if (folderPath.IndexOf(".vs", StringComparison.OrdinalIgnoreCase) >= 0)
+            {
+                return false;
+            }
+            if (folderPath.IndexOf(".git", StringComparison.OrdinalIgnoreCase) >= 0)
+            {
+                return false;
+            }
             return folderChecked;
         }
     }

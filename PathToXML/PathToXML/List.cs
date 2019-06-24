@@ -10,6 +10,9 @@ using System.Xml.Linq;
 
 namespace PathToXML
 {
+    /// <summary>
+    /// Выполняет заполнение xml файла, фильтрация, сортировка, описание, все вызывается тут.
+    /// </summary>
     class List
     {
         public static void GetList(string folderpath, List<String> filePathsList, XmlTextWriter xmlTextWriter, string replacePart)
