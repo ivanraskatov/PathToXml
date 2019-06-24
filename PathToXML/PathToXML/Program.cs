@@ -13,39 +13,6 @@ namespace PathToXML
 {
     public class Program
     {
-        public static void xmlWrite(XmlTextWriter xmlTextWriter, string folderPath, string replacePart)
-        {
-            if (Filter.FolderCheck(folderPath))
-            {
-                if (Helper.AllDirectorySharpCheck(folderPath))
-                {
-                    //Корневая папка
-                    xmlTextWriter.WriteStartElement("Folder");
-                    xmlTextWriter.WriteAttributeString("Path", Helper.XmlPathFormat(folderPath, replacePart));
-                    xmlTextWriter.WriteAttributeString("Description", Description.Show(folderPath));
-                    xmlTextWriter.WriteEndElement();
-                    List<string> fileNamesSortedList = Helper.FindSortSharpFiles(folderPath, replacePart);
-
-                    if (Helper.DirectorySharpCheck(folderPath))
-                    {
-                        //Файлы в корневой папке
-                        foreach (string fileName in fileNamesSortedList)
-                        {
-                            xmlTextWriter.WriteStartElement("File");
-                            xmlTextWriter.WriteAttributeString("Path", fileName);
-                            xmlTextWriter.WriteAttributeString("Description", " ");
-                            xmlTextWriter.WriteEndElement();
-
-                        }
-                    }
-                }
-            }
-
-            foreach (string folderName in Directory.GetDirectories(folderPath))
-            {
-                xmlWrite(xmlTextWriter, folderName, replacePart);
-            }
-        }
         static void Main(string[] args)
         {
             // указать новый путь исходников библиотеки
@@ -54,22 +21,25 @@ namespace PathToXML
             string folderPath3 = @"D:\GIT REPO\hardcodetWpfnotifyicon1.0.5\Hardcodet.NotifyIcon.Wpf\Source";
             string folderPathEmpty = @"D:\test2";
             string folderPathDirectories = @"D:\test3";
-           
+            string directoryName = new DirectoryInfo(folderPath2).Name;
+            
+            
             // Создать новый файл  xml
             String xmlFilesPath = @"D:\xmlFiles";
-            String xmlPath = @"D:\GIT REPO\XmlFiles\libtiff.net.xml";
+            String xmlPath = @"D:\GIT REPO\XmlFiles\LibTiff.NET.xml";
+            Console.WriteLine(xmlPath);
             String xmlPath2 = @"D:\GIT REPO\XmlFiles\hardcodetWpfnotifyicon1.0.5";
             XmlTextWriter xmlTextWriter = new XmlTextWriter(xmlPath, Encoding.UTF8);
             xmlTextWriter.Formatting = Formatting.Indented;
             xmlTextWriter.WriteStartDocument();
             xmlTextWriter.WriteStartElement("Sources");
             xmlTextWriter.WriteStartElement("Module");
-            xmlTextWriter.WriteAttributeString("Name", "linq2db");
-            //xmlStartNewFile(xmlFilesPath, folderPath);
-            //Helper.FindSortSharpFiles(folderPath);
-            string replacePart = Helper.GetPathReplacePart(folderPath2);
-
-            xmlWrite(xmlTextWriter, folderPath2, replacePart);
+            
+            xmlTextWriter.WriteAttributeString("Name", directoryName);
+            //string replacePart = Helper.GetPathReplacePart(folderPath2);
+            List<string> filePathsList = new List<string>();
+            string replacePart = Path.GetDirectoryName(folderPath2);
+            List.GetList(folderPath2, filePathsList, xmlTextWriter, replacePart);
             xmlTextWriter.WriteEndElement();
             xmlTextWriter.WriteEndElement();
             xmlTextWriter.Close();
