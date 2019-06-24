@@ -297,7 +297,203 @@ namespace PathToXML
             {
                 description = "Утилиты";
             }
-            
+            if (folderName.Contains("src"))
+            {
+                description = "Источник";
+            }
+            if (folderName.Contains("CsvHelper"))
+            {
+                description = "Корневая директория";
+            }
+            if (folderName.Contains("Configuration"))
+            {
+                description = "Конфигурация";
+            }
+            if (folderName.Contains("Attributes"))
+            {
+                description = "Атрибуты";
+            }
+            if (folderName.Contains("Expressions"))
+            {
+                description = "Выражения";
+            }
+            if (folderName.Contains("TypeConversion"))
+            {
+                description = "Объекты конвертации типов данных";
+            }
+            if (folderName.Contains("DocsGenerator"))
+            {
+                description = "Объекты генерации документов";
+            }
+            if (folderName.Contains("Formatters"))
+            {
+                description = "Объекты отвечающие за форматирование";
+            }
+            if (folderName.Contains("Generators"))
+            {
+                description = "Объекты отвечающие за генерацию";
+            }
+            if (folderName.Contains("Infos"))
+            {
+                description = "Объекты - описания";
+            }
+            if (folderName.Contains("Performance"))
+            {
+                description = "Объекты отвечанию за производительность";
+            }
+            if (folderName.Contains("ITfoxtec.Saml2"))
+            {
+                description = "Корнево каталог";
+            }
+            if (folderName.Contains("Binding"))
+            {
+                description = "Объекты свойств binding";
+            }
+            if (folderName.Contains("Claim"))
+            {
+                description = "Объявление типов";
+            }
+            if (folderName.Contains("Cryptography"))
+            {
+                description = "Объекты описывающие работу с шифрованием данных";
+            }
+            if (folderName.Contains("Extension"))
+            {
+                description = "Расширения";
+            }
+            if (folderName.Contains("Schema"))
+            {
+                description = "Схемы данных";
+            }
+            if (folderName.Contains("Metadata"))
+            {
+                description = "Метаданные";
+            }
+            if (folderName.Contains("Tokens"))
+            {
+                description = "Объекты описывающие токены";
+            }
+            if (folderName.Contains("Util"))
+            {
+                description = "Утилиты";
+            }
+            if (folderName.Contains("ITfoxtec.Saml2.Mvc"))
+            {
+                description = "Объекты MVC";
+            }
+            if (folderName.Contains("Saml2BindingExtensions"))
+            {
+                description = "Расширения SAML to Binding";
+            }
+            if (folderName.Contains("Autodiscover"))
+            {
+                description = "Автообнаружение";
+            }
+            if (folderName.Contains("Availability"))
+            {
+                description = "Доступность сотрудников";
+            }
+            if (folderName.Contains("PeopleInsights"))
+            {
+                description = "Сотрудники в поле зрения";
+            }
+            if (folderName.Contains("Recurrence"))
+            {
+                description = "Повторное проявление";
+            }
+            if (folderName.Contains("Pattern"))
+            {
+                description = "Шаблоны";
+            }
+            if (folderName.Contains("Range"))
+            {
+                description = "Диапазоны";
+            }
+            if (folderName.Contains("TimeZones"))
+            {
+                description = "Часовые пояса";
+            }
+            if (folderName.Contains("Core"))
+            {
+                description = "Ядро";
+            }
+            if (folderName.Contains("Request"))
+            {
+                description = "Запросы";
+            }
+            if (folderName.Contains("Response"))
+            {
+                description = "Ответы";
+            }
+            if (folderName.Contains("Credentials"))
+            {
+                description = "Разрешения";
+            }
+            if (folderName.Contains("Dns"))
+            {
+                description = "DNS объекты";
+            }
+            if (folderName.Contains("Elc"))
+            {
+                description = "Объекты описывающие работу ELC";
+            }
+            if (folderName.Contains("Enumeration"))
+            {
+                description = "Объекты-перечисления";
+            }
+            if (folderName.Contains("Exception"))
+            {
+                description = "Объекты-исключения";
+            }
+            if (folderName.Contains("Group"))
+            {
+                description = "Объекты-групп";
+            }
+            if (folderName.Contains("Interface"))
+            {
+                description = "Объекты, описывающие интерфейсы";
+            }
+            if (folderName.Contains("Misc"))
+            {
+                description = "Объекты, описывающие MISC ";
+            }
+            if (folderName.Contains("Availability"))
+            {
+                description = "Доступность";
+            }
+            if (folderName.Contains("IdConversion"))
+            {
+                description = "Описание конвертации идентификатора";
+            }
+            if (folderName.Contains("Notification"))
+            {
+                description = "Описание уведомлений";
+            }
+            if (folderName.Contains("PropertyDefinition"))
+            {
+                description = "Задание свойств";
+            }
+            if (folderName.Contains("Filter"))
+            {
+                description = "Описание фильтрации";
+            }
+            if (folderName.Contains("Security"))
+            {
+                description = "Объекты, отвечающие за безопасность данных";
+            }
+            if (folderName.Contains("Sync"))
+            {
+                description = "Объекты, отвечающие за синхронизацию данных";
+            }
+            if (folderName.Contains("UnifiedMessaging"))
+            {
+                description = "Унифицированный обмен сообщениями";
+            }
+           
+            //if (folderName.Contains(""))
+            //{
+            //    description = "";
+            //}
             return description;
         }
     }
