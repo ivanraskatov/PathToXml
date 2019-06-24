@@ -610,26 +610,95 @@ namespace PathToXML
             {
                 description = "Объекты взаимодействия с MS Word";
             }
-            //if (folderName.Contains(""))
-            //{
-            //    description = "";
-            //}
-            //if (folderName.Contains(""))
-            //{
-            //    description = "";
-            //}
-            //if (folderName.Contains(""))
-            //{
-            //    description = "";
-            //}
-            //if (folderName.Contains(""))
-            //{
-            //    description = "";
-            //}
-            //if (folderName.Contains(""))
-            //{
-            //    description = "";
-            //}
+            if (folderName.Contains("Npgsql"))
+            {
+                description = "Корневой каталог";
+            }
+            if (folderName.Contains("BackendMessage"))
+            {
+                description = "Объекты обработки backend сообщений";
+            }
+            if (folderName.Contains("FrontendMessages"))
+            {
+                description = "Объекты обработки Frontend сообщений";
+            }
+            if (folderName.Contains("Logging"))
+            {
+                description = "Логирование";
+            }
+            if (folderName.Contains("NameTranslation"))
+            {
+                description = "Объекты, отвечающие за перевод наименований";
+            }
+            if (folderName.Contains("NpgsqlTypes"))
+            {
+                description = "Объекты, описывающие Npgsql типы";
+            }
+            if (folderName.Contains("PostgresTypes"))
+            {
+                description = "Объекты, описывающие Postgres типы";
+            }
+            if (folderName.Contains("Tls"))
+            {
+                description = "Объекты взаимодействия с TLS";
+            }
+            if (folderName.Contains("TypeHandler"))
+            {
+                description = "Объекты обработчики типов";
+            }
+            if (folderName.Contains("DateTimeHandler"))
+            {
+                description = "Объекты обработчики даты и времени";
+            }
+            if (folderName.Contains("GeometricHandler"))
+            {
+                description = "Обработчики геометрических объектов";
+            }
+            if (folderName.Contains("NetworkHandlers"))
+            {
+                description = "Обработчики сетевых протоколов";
+            }
+            if (folderName.Contains("NumericHandler"))
+            {
+                description = "Обработчики чисел";
+            }
+            if (folderName.Contains("TypeHandling"))
+            {
+                description = "Обработка типов";
+            }
+            if (folderName.Contains("TypeMapping"))
+            {
+                description = "Определение соответствия типов";
+            }
+            if (folderName.Contains("Npgsql.GeoJSON"))
+            {
+                description = "Объекты, описывающие работу с Npgsql.GeoJSON";
+            }
+            if (folderName.Contains("Npgsql.Json.NET"))
+            {
+                description = "Объекты, описывающие работу с Npgsql.Json.NET";
+            }
+            if (folderName.Contains("Npgsql.LegacyPostgis"))
+            {
+                description = "Объекты, описывающие работу с Npgsql.LegacyPostgis";
+            }
+            if (folderName.Contains("NetTopologySuite"))
+            {
+                description = "Обработка NetTopologySuite";
+            }
+            if (folderName.Contains("Npgsql.NodaTime"))
+            {
+                description = "Обработка Npgsql.NodaTime";
+            }
+            if (folderName.Contains("Npgsql.RawPostgis"))
+            {
+                description = "Обработчики Npgsql.RawPostgis";
+            }
+            if (folderName.Contains("VSIX"))
+            {
+                description = "Объекты, описывающие работу VSIX";
+            }
+            
             return description;
         }
     }
