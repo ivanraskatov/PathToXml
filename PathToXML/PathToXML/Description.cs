@@ -241,21 +241,21 @@ namespace PathToXML
             {
                 description = "Объекты-перечисления, используемые в библиотеке";
             }
-            if (folderName.Contains("ddddd"))
+            if (folderName.Contains("NotifyIconWpf"))
             {
-                description = "Классы описывающие ddddd";
+                description = "Объекты Wpf, используемые в библиотеке";
             }
-            if (folderName.Contains("ddddd"))
+            if (folderName.Contains("Interop"))
             {
-                description = "Классы описывающие ddddd";
+                description = "Объекты взаимодействия, используемые  в библиотеке";
             }
-            if (folderName.Contains("ddddd"))
+            if (folderName.Contains("CodeCompletion"))
             {
-                description = "Классы описывающие ddddd";
+                description = "Объекты, отвечающие за автозавершение ";
             }
-            if (folderName.Contains("ddddd"))
+            if (folderName.Contains("Document"))
             {
-                description = "Классы описывающие ddddd";
+                description = "Классы описывающие работу с документами";
             }
             if (folderName.Contains("ddddd"))
             {

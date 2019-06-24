@@ -43,7 +43,7 @@ namespace PathToXML
                             Console.WriteLine("File  " + filenameNew);
                             xmlTextWriter.WriteStartElement("File");
                             xmlTextWriter.WriteAttributeString("Path", filenameNew);
-                            xmlTextWriter.WriteAttributeString("Description", " ");
+                            xmlTextWriter.WriteAttributeString("Description","");
                             xmlTextWriter.WriteEndElement();
                         }
                     }

@@ -47,6 +47,14 @@ namespace PathToXML
             {
                 return false;
             }
+            if (folderPath.IndexOf("sample", StringComparison.OrdinalIgnoreCase) >= 0)
+            {
+                return false;
+            }
+            if (folderPath.IndexOf(".git", StringComparison.OrdinalIgnoreCase) >= 0)
+            {
+                return false;
+            }
             return folderChecked;
         }
     }
