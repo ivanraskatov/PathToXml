@@ -489,7 +489,143 @@ namespace PathToXML
             {
                 description = "Унифицированный обмен сообщениями";
             }
-           
+
+            if (folderName.Contains("MimeType"))
+            {
+                description = "Основной каталог";
+            }
+            if (folderName.Contains("NET 2.0"))
+            {
+                description = "Версия NET 2.0";
+            }
+            if (folderName.Contains("NET 3.0"))
+            {
+                description = "Версия NET 3.0";
+            }
+            if (folderName.Contains("NET 3.5"))
+            {
+                description = "Версия NET 3.5";
+            }
+            if (folderName.Contains("NET 4.5"))
+            {
+                description = "Версия NET 4.5";
+            }
+            if (folderName.Contains("NET 4.0"))
+            {
+                description = "Версия NET 4.0";
+            }
+            if (folderName.Contains("Source"))
+            {
+                description = "Исходники";
+            }
+            if (folderName.Contains("Access"))
+            {
+                description = "Объекты, регламентирующие доступ";
+            }
+            if (folderName.Contains("Class"))
+            {
+                description = "Классы";
+            }
+            if (folderName.Contains("Constant"))
+            {
+                description = "Константы";
+            }
+            if (folderName.Contains("Module"))
+            {
+                description = "Модули, используемые в бибилиотеке";
+            }
+            if (folderName.Contains("Tools"))
+            {
+                description = "Инструменты, используемые в бибилиотеке";
+            }
+            if (folderName.Contains("ADODB"))
+            {
+                description = "Объекты описывающие работу с ADODB";
+            }
+            if (folderName.Contains("ClientApplication"))
+            {
+                description = "Объекты клиентского приложения";
+            }
+            if (folderName.Contains("DAO"))
+            {
+                description = "Объекты астрактного интерфейса доступа к БД";
+            }
+            if (folderName.Contains("MSComctlLib"))
+            {
+                description = "Объекты взаимодействия с MSComctlLib";
+            }
+            if (folderName.Contains("MSDATASRC"))
+            {
+                description = "Объекты взаимодействия с MSDATASRC";
+            }
+            if (folderName.Contains("MSForms"))
+            {
+                description = "Объекты взаимодействия с MSForms";
+            }
+            if (folderName.Contains("MSHTML"))
+            {
+                description = "Объекты взаимодействия с MSHTML";
+            }
+            if (folderName.Contains("Record"))
+            {
+                description = "Объекты записей";
+            }
+            if (folderName.Contains("MSProject"))
+            {
+                description = "Объекты взаимодействия с MSProject";
+            }
+            if (folderName.Contains("NamedPipes"))
+            {
+                description = "Объекты работы с именованными каналами";
+            }
+            if (folderName.Contains("Office"))
+            {
+                description = "Объекты взаимодействия с MS Office";
+            }
+            if (folderName.Contains("Class"))
+            {
+                description = "Объекты классов";
+            }
+            if (folderName.Contains("Dialog"))
+            {
+                description = "Объекты диалогов";
+            }
+            if (folderName.Contains("Informations"))
+            {
+                description = "Объекты информирования";
+            }
+            if (folderName.Contains("PowerPoint"))
+            {
+                description = "Объекты взаимодействия с MS PowerPoint";
+            }
+            if (folderName.Contains("VBIDE"))
+            {
+                description = "Объекты взаимодействия с VBIDE";
+            }
+            if (folderName.Contains("Visio"))
+            {
+                description = "Объекты взаимодействия с MS Visio";
+            }
+            if (folderName.Contains("Word"))
+            {
+                description = "Объекты взаимодействия с MS Word";
+            }
+            //if (folderName.Contains(""))
+            //{
+            //    description = "";
+            //}
+            //if (folderName.Contains(""))
+            //{
+            //    description = "";
+            //}
+            //if (folderName.Contains(""))
+            //{
+            //    description = "";
+            //}
+            //if (folderName.Contains(""))
+            //{
+            //    description = "";
+            //}
             //if (folderName.Contains(""))
             //{
             //    description = "";
