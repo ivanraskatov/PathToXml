@@ -311,11 +311,11 @@ namespace PathToXML
             }
             if (folderName.Contains("Attributes"))
             {
-                description = "Атрибуты";
+                description = "Объекты, описывающие атрибуты";
             }
             if (folderName.Contains("Expressions"))
             {
-                description = "Выражения";
+                description = "Объекты, описывающие выражения";
             }
             if (folderName.Contains("TypeConversion"))
             {
@@ -359,7 +359,7 @@ namespace PathToXML
             }
             if (folderName.Contains("Extension"))
             {
-                description = "Расширения";
+                description = "Объекты, описывающие расширения";
             }
             if (folderName.Contains("Schema"))
             {
@@ -367,7 +367,7 @@ namespace PathToXML
             }
             if (folderName.Contains("Metadata"))
             {
-                description = "Метаданные";
+                description = "Объекты, описывающие метаданные";
             }
             if (folderName.Contains("Tokens"))
             {
@@ -375,7 +375,7 @@ namespace PathToXML
             }
             if (folderName.Contains("Util"))
             {
-                description = "Утилиты";
+                description = "Объекты, описывающие утилиты";
             }
             if (folderName.Contains("ITfoxtec.Saml2.Mvc"))
             {
@@ -387,11 +387,11 @@ namespace PathToXML
             }
             if (folderName.Contains("Autodiscover"))
             {
-                description = "Автообнаружение";
+                description = "Объекты, связанные с автообнаружением сервисов";
             }
             if (folderName.Contains("Availability"))
             {
-                description = "Доступность сотрудников";
+                description = "Объекты, связанные с проверкой доступности сотрудников";
             }
             if (folderName.Contains("PeopleInsights"))
             {
@@ -403,35 +403,35 @@ namespace PathToXML
             }
             if (folderName.Contains("Pattern"))
             {
-                description = "Шаблоны";
+                description = "Объекты, описывающие шаблоны";
             }
             if (folderName.Contains("Range"))
             {
-                description = "Диапазоны";
+                description = "Объекты, описывающие диапазоны значений";
             }
             if (folderName.Contains("TimeZones"))
             {
-                description = "Часовые пояса";
+                description = "Объекты, описывающие настройки часовых поясов";
             }
             if (folderName.Contains("Core"))
             {
-                description = "Ядро";
+                description = "Объекты, связанные с ядром";
             }
             if (folderName.Contains("Request"))
             {
-                description = "Запросы";
+                description = "Объекты, описывающие запросы";
             }
             if (folderName.Contains("Response"))
             {
-                description = "Ответы";
+                description = "Объекты, описывающие ответы";
             }
             if (folderName.Contains("Credentials"))
             {
-                description = "Разрешения";
+                description = "Объекты, описывающие разрешения";
             }
             if (folderName.Contains("Dns"))
             {
-                description = "DNS объекты";
+                description = "Объекты, связанные с DNS объектами";
             }
             if (folderName.Contains("Elc"))
             {
@@ -439,15 +439,15 @@ namespace PathToXML
             }
             if (folderName.Contains("Enumeration"))
             {
-                description = "Объекты-перечисления";
+                description = "Описание объектов-перечислений";
             }
             if (folderName.Contains("Exception"))
             {
-                description = "Объекты-исключения";
+                description = "Описание объектов-исключений";
             }
             if (folderName.Contains("Group"))
             {
-                description = "Объекты-групп";
+                description = "Описание объектов-групп";
             }
             if (folderName.Contains("Interface"))
             {
@@ -459,7 +459,7 @@ namespace PathToXML
             }
             if (folderName.Contains("Availability"))
             {
-                description = "Доступность";
+                description = "Объекты, описывающие доступность";
             }
             if (folderName.Contains("IdConversion"))
             {
@@ -524,11 +524,11 @@ namespace PathToXML
             }
             if (folderName.Contains("Class"))
             {
-                description = "Классы";
+                description = "Объекты, описывающие классы";
             }
             if (folderName.Contains("Constant"))
             {
-                description = "Константы";
+                description = "Объекты, описывающие константы";
             }
             if (folderName.Contains("Module"))
             {
@@ -624,7 +624,7 @@ namespace PathToXML
             }
             if (folderName.Contains("Logging"))
             {
-                description = "Логирование";
+                description = "Объекты, связанные с логированием";
             }
             if (folderName.Contains("NameTranslation"))
             {
