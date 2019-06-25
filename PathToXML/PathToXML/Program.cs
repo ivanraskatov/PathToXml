@@ -42,10 +42,17 @@ namespace PathToXML
             xmlPaths[7] = @"D:\GIT REPO\XmlFiles\MimeTypeMap-2.3.2.xml";
             xmlPaths[8] = @"D:\GIT REPO\XmlFiles\NetOffice 1.7.3.xml";
             xmlPaths[9] = @"D:\GIT REPO\XmlFiles\npgsql-4.0.2.xml";
-            
+
 
             #endregion
-
+            #region Delete old .xml files from directory
+            //Удаление старых xml файлов из папки,чтобы не было наложения
+            DirectoryInfo deleteDirFiles = new DirectoryInfo(@"D:\GIT REPO\XmlFiles\");
+            foreach (FileInfo file in deleteDirFiles.GetFiles())
+            {
+                file.Delete();
+            }
+            #endregion
             #region Write Files
 
 
@@ -56,11 +63,14 @@ namespace PathToXML
                 xmlTextWriter.WriteStartDocument();
                 xmlTextWriter.WriteStartElement("Sources");
                 xmlTextWriter.WriteStartElement("Module");
-                // Запись в xml файл
+
+
+
                 string directoryName = new DirectoryInfo(folderPaths[i]).Name;
                 xmlTextWriter.WriteAttributeString("Name", directoryName);
                 List<string> filePathsList = new List<string>();
                 string replacePart = Path.GetDirectoryName(folderPaths[i]);
+                // Запись в xml файл
                 List.GetList(folderPaths[i], filePathsList, xmlTextWriter, replacePart);
                 xmlTextWriter.WriteEndElement();
                 xmlTextWriter.WriteEndElement();

@@ -55,6 +55,10 @@ namespace PathToXML
             {
                 return false;
             }
+            if (folderPath.IndexOf("tutorial", StringComparison.OrdinalIgnoreCase) >= 0)
+            {
+                return false;
+            }
             return folderChecked;
         }
     }
