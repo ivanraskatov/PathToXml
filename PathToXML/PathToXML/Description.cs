@@ -99,71 +99,71 @@ namespace PathToXML
             }
             if (folderName.Contains("rotate"))
             {
-                description = "Классы описывающие вращение";
+                description = "Классы, описывающие вращение";
             }
             if (folderName.Contains("ReadWriteCustomTags"))
             {
-                description = "Классы описывающие чтение/запись кастомных тэгов";
+                description = "Классы, описывающие чтение/запись кастомных тэгов";
             }
             if (folderName.Contains("ReadUnknownTagValue"))
             {
-                description = "Классы описывающие считывание неизвестных тэгов";
+                description = "Классы, описывающие считывание неизвестных тэгов";
             }
             if (folderName.Contains("ReadSamples"))
             {
-                description = "Классы описывающие считывание образцов";
+                description = "Классы, описывающие считывание образцов";
             }
             if (folderName.Contains("ReadExifMetadata"))
             {
-                description = "Классы описывающие считывание метаданных";
+                description = "Классы, описывающие считывание метаданных";
             }
             if (folderName.Contains("ReadBasicProperties"))
             {
-                description = "Классы описывающие считывание базовых свойств";
+                description = "Классы, описывающие считывание базовых свойств";
             }
             if (folderName.Contains("ReadArbitraryScanlines"))
             {
-                description = "Классы описывающие произвольные сканлинии ";
+                description = "Классы, описывающие произвольные сканлинии ";
             }
             if (folderName.Contains("Process16BitSamples"))
             {
-                description = "Классы описывающие обработку 16 битных образцов";
+                description = "Классы, описывающие обработку 16 битных образцов";
             }
             if (folderName.Contains("PrintDirectory"))
             {
-                description = "Классы описывающие печать директории";
+                description = "Классы, описывающие печать директории";
             }
             if (folderName.Contains("NumberOfPages"))
             {
-                description = "Классы описывающие число страниц";
+                description = "Классы, описывающие число страниц";
             }
             if (folderName.Contains("ImageToBitonalTiff"))
             {
-                description = "Классы описывающие конвертацию изображения в монохромный Tiff";
+                description = "Классы, описывающие конвертацию изображения в монохромный Tiff";
             }
             if (folderName.Contains("EnumerateTiffTags"))
             {
-                description = "Классы описывающие перечисление тэгов ";
+                description = "Классы, описывающие перечисление тэгов ";
             }
             if (folderName.Contains("DetermineCorruptPage"))
             {
-                description = "Классы описывающие распознавание поврежденной страницы";
+                description = "Классы, описывающие распознавание поврежденной страницы";
             }
             if (folderName.Contains("CreateMultipageTiff"))
             {
-                description = "Классы описывающие создание мультистраничного Tiff";
+                description = "Классы, описывающие создание мультистраничного Tiff";
             }
             if (folderName.Contains("CreateGradientTiff"))
             {
-                description = "Классы описывающие создание векторного Tiff";
+                description = "Классы, описывающие создание векторного Tiff";
             }
             if (folderName.Contains("Create16BitGrayscaleTiff"))
             {
-                description = "Классы описывающие создание 16 битного Tiff (оттенки серого)";
+                description = "Классы, описывающие создание 16 битного Tiff (оттенки серого)";
             }
             if (folderName.Contains("ConvertToSingleStripInMemory"))
             {
-                description = "Классы описывающие конвертацию в однополосный тип хранения";
+                description = "Классы, описывающие конвертацию в однополосный тип хранения";
             }
             if (folderName.Contains("ConvertToSingleStrip"))
             {
@@ -215,7 +215,7 @@ namespace PathToXML
             }
             if (folderName.Contains("UsingCustomTiffStream"))
             {
-                description = "Кастомный потоки Tiff";
+                description = "Кастомные потоки Tiff";
             }
             if (folderName.Contains("UsingSystemIOStream"))
             {
@@ -255,7 +255,7 @@ namespace PathToXML
             }
             if (folderName.Contains("Document"))
             {
-                description = "Классы описывающие работу с документами";
+                description = "Классы, описывающие работу с документами";
             }
             if (folderName.Contains("Highlighting"))
             {
@@ -327,11 +327,11 @@ namespace PathToXML
             }
             if (folderName.Contains("Formatters"))
             {
-                description = "Объекты отвечающие за форматирование";
+                description = "Объекты, отвечающие за форматирование";
             }
             if (folderName.Contains("Generators"))
             {
-                description = "Объекты отвечающие за генерацию";
+                description = "Объекты, отвечающие за генерацию";
             }
             if (folderName.Contains("Infos"))
             {
@@ -339,11 +339,11 @@ namespace PathToXML
             }
             if (folderName.Contains("Performance"))
             {
-                description = "Объекты отвечанию за производительность";
+                description = "Объекты, отвечающие за производительность";
             }
             if (folderName.Contains("ITfoxtec.Saml2"))
             {
-                description = "Корнево каталог";
+                description = "Корневой каталог";
             }
             if (folderName.Contains("Binding"))
             {
@@ -355,7 +355,7 @@ namespace PathToXML
             }
             if (folderName.Contains("Cryptography"))
             {
-                description = "Объекты описывающие работу с шифрованием данных";
+                description = "Объекты, описывающие работу с шифрованием данных";
             }
             if (folderName.Contains("Extension"))
             {
@@ -371,7 +371,7 @@ namespace PathToXML
             }
             if (folderName.Contains("Tokens"))
             {
-                description = "Объекты описывающие токены";
+                description = "Объекты, описывающие токены";
             }
             if (folderName.Contains("Util"))
             {
@@ -435,7 +435,7 @@ namespace PathToXML
             }
             if (folderName.Contains("Elc"))
             {
-                description = "Объекты описывающие работу ELC";
+                description = "Объекты, описывающие работу ELC";
             }
             if (folderName.Contains("Enumeration"))
             {
@@ -540,7 +540,7 @@ namespace PathToXML
             }
             if (folderName.Contains("ADODB"))
             {
-                description = "Объекты описывающие работу с ADODB";
+                description = "Объекты, описывающие работу с ADODB";
             }
             if (folderName.Contains("ClientApplication"))
             {
@@ -548,7 +548,7 @@ namespace PathToXML
             }
             if (folderName.Contains("DAO"))
             {
-                description = "Объекты астрактного интерфейса доступа к БД";
+                description = "Объекты абстрактного интерфейса доступа к БД";
             }
             if (folderName.Contains("MSComctlLib"))
             {
