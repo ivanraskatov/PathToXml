@@ -27,7 +27,7 @@ namespace PathToXML
             folderPaths[7] = @"D:\GIT REPO\MimeTypeMap-2.3.2";
             folderPaths[8] = @"D:\GIT REPO\NetOffice 1.7.3";
             folderPaths[9] = @"D:\GIT REPO\npgsql-4.0.2";
-           
+            folderPaths[10] = @"D:\GIT REPO\quartznet3.0.6";
 
             // Создать новый файл  xml
 
@@ -42,7 +42,7 @@ namespace PathToXML
             xmlPaths[7] = @"D:\GIT REPO\XmlFiles\MimeTypeMap-2.3.2.xml";
             xmlPaths[8] = @"D:\GIT REPO\XmlFiles\NetOffice 1.7.3.xml";
             xmlPaths[9] = @"D:\GIT REPO\XmlFiles\npgsql-4.0.2.xml";
-
+            xmlPaths[10] = @"D:\GIT REPO\XmlFiles\quartznet3.0.6.xml";
 
             #endregion
             #region Delete old .xml files from directory
@@ -56,7 +56,7 @@ namespace PathToXML
             #region Write Files
 
 
-            for (int i = 1; i <= 9; i++)
+            for (int i = 1; i <= 10; i++)
             {
                 XmlTextWriter xmlTextWriter = XmlWriter.Show(xmlPaths[i]);
                 xmlTextWriter.Formatting = Formatting.Indented;

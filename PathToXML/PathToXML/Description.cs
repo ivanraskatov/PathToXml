@@ -698,7 +698,47 @@ namespace PathToXML
             {
                 description = "Объекты, описывающие работу VSIX";
             }
-            
+            if (folderName.Contains("impl "))
+            {
+                description = "Объекты, связанные с impl";
+            }
+            if (folderName.Contains("AdoJobStore"))
+            {
+                description = "Объекты, описывающие параметры AdoJobStore";
+            }
+            if (folderName.Contains("Calendar"))
+            {
+                description = "Объекты, описывающие настройки календаря ";
+            }
+            if (folderName.Contains("Matchers"))
+            {
+                description = "Объекты, связанные с использованием matcher ";
+            }
+            if (folderName.Contains("Triggers"))
+            {
+                description = "Объекты, описывающие триггеры ";
+            }
+            if (folderName.Contains("Listener"))
+            {
+                description = "Объекты, описывающие listener ";
+            }
+            if (folderName.Contains("Simpl"))
+            {
+                description = "Объекты, описывающие упрощенный подход к различным узлам";
+            }
+            if (folderName.Contains("SPI"))
+            {
+                description = "Объекты, описывающие интерфейс SPI ";
+            }
+            if (folderName.Contains("Xml"))
+            {
+                description = "Объекты, описывающие работу с xml";
+            }
+            //if (folderName.Contains(""))
+            //{
+            //    description = "";
+            //}
+
             return description;
         }
     }
