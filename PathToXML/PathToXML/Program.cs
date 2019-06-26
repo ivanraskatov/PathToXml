@@ -28,6 +28,12 @@ namespace PathToXML
             folderPaths[8] = @"D:\GIT REPO\NetOffice 1.7.3";
             folderPaths[9] = @"D:\GIT REPO\npgsql-4.0.2";
             folderPaths[10] = @"D:\GIT REPO\quartznet3.0.6";
+            folderPaths[11] = @"D:\GIT REPO\Ntwain";
+            folderPaths[12] = @"D:\GIT REPO\Open-XML-SDK";
+            folderPaths[13] = @"D:\GIT REPO\PdfiumViewer";
+            folderPaths[14] = @"D:\GIT REPO\PDFsharpWPF";
+            folderPaths[15] = @"D:\GIT REPO\Unity";
+            folderPaths[16] = @"D:\GIT REPO\Syncfusion.SfChart.WPF";
 
             // Создать новый файл  xml
 
@@ -43,6 +49,12 @@ namespace PathToXML
             xmlPaths[8] = @"D:\GIT REPO\XmlFiles\NetOffice 1.7.3.xml";
             xmlPaths[9] = @"D:\GIT REPO\XmlFiles\npgsql-4.0.2.xml";
             xmlPaths[10] = @"D:\GIT REPO\XmlFiles\quartznet3.0.6.xml";
+            xmlPaths[11] = @"D:\GIT REPO\XmlFiles\Ntwain.xml";
+            xmlPaths[12] = @"D:\GIT REPO\XmlFiles\Open-XML-SDK.xml";
+            xmlPaths[13] = @"D:\GIT REPO\XmlFiles\PdfiumViewer.xml";
+            xmlPaths[14] = @"D:\GIT REPO\XmlFiles\PDFsharpWPF.xml";
+            xmlPaths[15] = @"D:\GIT REPO\XmlFiles\Unity.xml";
+            xmlPaths[16] = @"D:\GIT REPO\XmlFiles\Syncfusion.SfChart.WPF.xml";
 
             #endregion
             #region Delete old .xml files from directory
@@ -56,7 +68,7 @@ namespace PathToXML
             #region Write Files
 
 
-            for (int i = 1; i <= 10; i++)
+            for (int i = 1; i <= 16; i++)
             {
                 XmlTextWriter xmlTextWriter = XmlWriter.Show(xmlPaths[i]);
                 xmlTextWriter.Formatting = Formatting.Indented;
